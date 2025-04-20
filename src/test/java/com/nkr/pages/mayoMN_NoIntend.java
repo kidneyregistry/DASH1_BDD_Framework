@@ -79,6 +79,7 @@ public class mayoMN_NoIntend {
 					//TargetLocator url1 = driver.switchTo();
 					System.out.println(url);//Printing the URL with ID that was created
 					driver.get(url);
+					System.out.println("url passed");
 				}
 				public void QuestionaireInfo() throws InterruptedException, IOException {
 					driver.findElement(By.xpath("//a[contains(text(),'Continue')]")).click();//Continue
