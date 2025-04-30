@@ -16,7 +16,8 @@ public class ConfigReader {
 
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("C:\\Users\\MohammedHowlader\\OneDrive - National Kidney Registry\\NKR_Dash_Registration\\Configuration.properties");
+			//FileInputStream ip = new FileInputStream("C:\\Users\\MohammedHowlader\\OneDrive - National Kidney Registry\\NKR_Dash_Registration\\Configuration.properties");
+			FileInputStream ip = new FileInputStream("./Configuration.properties");
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {
