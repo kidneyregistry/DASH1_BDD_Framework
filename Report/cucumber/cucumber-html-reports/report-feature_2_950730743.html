@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>14 Apr 2025, 16:15</td>
+      <td>28 Apr 2025, 18:25</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Testing NKR_Kidney_No_Intneded_Recipient Registration</td>
-          <td      class="passed"    >4</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="64303038400">1:4.303</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="23726919900">23.726</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Testing NKR_Kidney_No_Intneded_Recipient Registration</span>
 
@@ -189,12 +189,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1:4.303</span>
+  <span class="lead-duration duration">23.726</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Testing NKR_Kidney_No_Intneded_Recipient Registration</span>
 
@@ -205,7 +205,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -227,7 +227,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.nkr.AppHooks.LoginHooks.getProperty()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -243,7 +243,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.nkr.AppHooks.LoginHooks.launchBrowser()</span>
 
-  <span class="lead-duration duration">1.076</span>
+  <span class="lead-duration duration">0.935</span>
 
           </div>
 
@@ -260,9 +260,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -272,7 +272,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -280,7 +280,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User goes to NKR_Kidney_No_Intneded_Recipient url <span class="argument">&quot;https://nkr.donorscreen.fail/register/now&quot;</span></span>
 
-  <span class="lead-duration duration">15.281</span>
+  <span class="lead-duration duration">17.251</span>
 
 </div>
 
@@ -307,7 +307,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User Enter Required Information for NKR_Kidney_No_Intneded_Recipient registration</span>
 
-  <span class="lead-duration duration">6.264</span>
+  <span class="lead-duration duration">2.232</span>
 
 </div>
 
@@ -330,11 +330,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">user goes to NKR_Kidney_No_Intneded_Recipient smtp server</span>
 
-  <span class="lead-duration duration">7.969</span>
+  <span class="lead-duration duration">4.243</span>
 
 </div>
 
@@ -342,6 +342,42 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[normalize-space()='registrations@donorscreen.org']&quot;}
+  (Session info: chrome=135.0.7049.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MOHAMMED-LT2', ip: '192.168.1.229', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df2643f6097bf1a08380d0163d792ab3
+*** Element info: {Using=xpath, value=//div[normalize-space()='registrations@donorscreen.org']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.nkr.pages.NKR_Kidney_NoIntend.VerifySMTPEmail(NKR_Kidney_NoIntend.java:62)
+	at com.nkr.Step_Definition.NoIntended_NKR_Kidney_StepDefinition.user_goes_to_mayo_mn_liver_no_intneded_recipiente_smtp_server(NoIntended_NKR_Kidney_StepDefinition.java:29)
+	at &#10045;.user goes to NKR_Kidney_No_Intneded_Recipient smtp server(file:///C:/Users/MohammedHowlader/new-eclipse-workspace/NKR_Dash_Registration_Checkout/src/test/resources/Features/NKR_Kidney_No_Intneded_Recipient.feature:6)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -357,11 +393,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User take the NKR_Kidney_No_Intneded_Recipient questionaire from the email</span>
 
-  <span class="lead-duration duration">34.787</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -388,7 +424,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -400,13 +436,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.nkr.AppHooks.LoginHooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.194</span>
 
           </div>
 
@@ -415,6 +451,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Testing_NKR_Kidney_No_Intneded_Recipient_Registration</a>
+      <a href="embeddings/embedding_1428068605.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1428068605.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
         <div class="hook">
@@ -422,7 +473,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.nkr.AppHooks.LoginHooks.quitBrowser()</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
